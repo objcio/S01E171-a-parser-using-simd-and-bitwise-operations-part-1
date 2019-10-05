@@ -10,7 +10,6 @@
 #define simd_h
 
 #include <stdio.h>
-#include <x86intrin.h>
 
 uint64_t cmp_mask_against_input(const uint8_t *ptr, uint8_t m);
 uint64_t carryless_multiply(uint64_t x, uint64_t y);

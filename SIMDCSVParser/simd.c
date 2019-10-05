@@ -7,6 +7,7 @@
 //
 
 #include "simd.h"
+#include <x86intrin.h>
 
 uint64_t cmp_mask_against_input(const uint8_t *ptr, uint8_t m) {
     const __m256i mask = _mm256_set1_epi8(m);
